@@ -1,16 +1,19 @@
-# Домашнее задание 3 — анализатор логов
+# Анализатор логов
 
-Утилита, которая читает `access.log`, считает статистику и сохраняет отчёт в JSON или Markdown.
+Домашнее задание 3 курса по Java. Утилита читает лог веб-сервера (`access.log`), считает статистику и сохраняет отчёт.
 
-- `Configuration` — разбор аргументов командной строки и проверка выходного файла.
-- `LogEntry` — одна запись лога.
-- `LogAnalyzer` — разбор лога и подсчёт статистики.
-- `Statistic` — результаты анализа.
-- `JsonWriter`, `MarkdownWriter` — запись отчёта.
-- `Tests` — юнит-тесты.
+## Что сделано в качестве ДЗ
+
+- Разбор аргументов командной строки и проверка выходного файла (`Configuration`).
+- Разбор записей лога (`LogEntry`) и подсчёт статистики (`LogAnalyzer`, `Statistic`).
+- Сохранение отчёта в JSON (`JsonWriter`) или в Markdown (`MarkdownWriter`).
+- Логирование через `java.util.logging`.
+- Юнит-тесты для конфигурации, записи лога и статистики (`src/Tests`).
 
 ## Запуск
 
-Откройте проект в IntelliJ IDEA (файл `homework3.iml`) и запустите `Logger.Main` с аргументами конфигурации. Тесты лежат в `src/Tests`.
+Откройте проект в IntelliJ IDEA (файл `homework3.iml`) и запустите `Logger.Main` с аргументами конфигурации.
 
-Исходный код взят из ветки `homework3` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).
+Пример данных: `access.log`, пример результата: `report.json`.
+
+Исходный код: ветка `homework3` репозитория [wmeenw/JAVAhomework](https://github.com/wmeenw/JAVAhomework).

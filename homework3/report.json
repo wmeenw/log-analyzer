@@ -1,0 +1,27 @@
+{
+  "files": ["access.log"],
+  "totalRequestsCount": 6,
+  "responseSizeInBytes": {
+    "average": 661.33,
+    "max": 2048,
+    "p95": 2048.0
+  },
+  "resources": [
+    {"resource": "/index.html", "totalRequestsCount": 2},
+    {"resource": "/about.html", "totalRequestsCount": 1},
+    {"resource": "/contact.html", "totalRequestsCount": 1},
+    {"resource": "/downloads/product_1", "totalRequestsCount": 1},
+    {"resource": "/downloads/product_2", "totalRequestsCount": 1}
+  ],
+  "responseCodes": [
+    {"code": 200, "totalResponsesCount": 3},
+    {"code": 304, "totalResponsesCount": 1},
+    {"code": 500, "totalResponsesCount": 1},
+    {"code": 404, "totalResponsesCount": 1}
+  ],
+  "requestsPerDate": [
+    {"date": "2007-10-11", "weekday": "THURSDAY", "totalRequestsCount": 3, "totalRequestsPercentage": 50.0},
+    {"date": "2007-10-12", "weekday": "FRIDAY", "totalRequestsCount": 2, "totalRequestsPercentage": 33.33},
+    {"date": "2007-10-13", "weekday": "SATURDAY", "totalRequestsCount": 1, "totalRequestsPercentage": 16.67}
+  ]
+}
